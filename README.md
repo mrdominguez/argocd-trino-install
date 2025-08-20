@@ -130,7 +130,7 @@ application.argoproj.io/trino created
 ```
 Lastly, list applications:
 ```
-core@core-10920x:~/argocd-trino-install$  argocd app list
+core@core-10920x:~/argocd-trino-install$ argocd app list
 NAME              CLUSTER                         NAMESPACE  PROJECT  STATUS  HEALTH   SYNCPOLICY  CONDITIONS  REPO                                                     PATH              TARGET
 argo-cd/argo-cd   https://kubernetes.default.svc  argo-cd    default  Synced  Healthy  Auto        <none>      https://github.com/mrdominguez/argocd-trino-install.git  charts/argo-cd    HEAD
 argo-cd/root-app  https://kubernetes.default.svc  argo-cd    default  Synced  Healthy  Auto        <none>      https://github.com/mrdominguez/argocd-trino-install.git  charts/root-app/  HEAD
