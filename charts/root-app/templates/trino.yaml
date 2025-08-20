@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: trino
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: trino
+  source:
+    repoURL: https://trinodb.github.io/charts/
+    chart: trino
+    targetRevision: 1.40.0
+    helm:
+      values: |
+        server:
+          workers: 2
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: trino
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

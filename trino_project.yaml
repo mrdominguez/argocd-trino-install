@@ -1,0 +1,11 @@
+metadata:
+  managedFields:
+  - apiVersion: argoproj.io/v1alpha1
+  name: trino
+spec:
+  destinations:
+  - name: '*'
+    namespace: trino
+    server: '*'
+  sourceRepos:
+  - https://trinodb.github.io/charts/
