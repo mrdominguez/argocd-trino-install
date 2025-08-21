@@ -119,7 +119,7 @@ default               *,*           *                                  */*      
 trino                 *,trino       https://trinodb.github.io/charts/  <none>                      <none>                        <none>          disabled            <none>
 ```
 
-## Create `root-app`
+## Create `root-app` and associated applications
 Execute the following command:
 ```
 core@core-10920x:~/argocd-trino-install$ helm template charts/root-app | kubectl apply -f -
