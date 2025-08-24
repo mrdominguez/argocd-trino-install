@@ -13,7 +13,7 @@ helm dep update charts/argo-cd
 helm install argo-cd charts/argo-cd -n argo-cd --create-namespace
 ```
 
-After sucessful deployment:
+After successful deployment:
 ```
 core@core-10920x:~/argocd-trino-install$ kubectl get all -n argo-cd
 NAME                                                            READY   STATUS    RESTARTS   AGE
